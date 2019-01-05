@@ -13,6 +13,6 @@ function fuzzyMatch(drivers, string) {
 
 function matchName(drivers, string) {
   return drivers.filter(function (elm) {
-    return (elm.slice(0, string.length).toLowerCase() === string.toLowerCase())
+    return (elm.name.toLowerCase() === string.toLowerCase())
   });
 }
